@@ -94,7 +94,7 @@ TEST DATA 2: [16, 6, 10, 5, 6, 1, 4]
 
 GOOD LUCK 😀
 */
-
+/*
 const arr1 = [5, 2, 4, 1, 15, 8, 3];
 const arr2 = [16, 6, 10, 5, 6, 1, 4];
 
@@ -112,7 +112,7 @@ const calcAverageHumanAge = function (ages) {
 calcAverageHumanAge(arr1);
 console.log(arr1);
 calcAverageHumanAge(arr2);
-
+*/
 ///////////////////////////////////////
 // Coding Challenge #3
 
