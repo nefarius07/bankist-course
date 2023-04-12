@@ -2,6 +2,9 @@
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
+///////////////////////////////////////
+// The Magic of Chaining Methods
+/*
 const eurToUsd = 1.1;
 console.log(movements);
 
@@ -15,7 +18,7 @@ const totalDepositsUSD = movements
   })
   .reduce((acc, mov) => acc + mov, 0);
 console.log(totalDepositsUSD);
-
+*/
 ///////////////////////////////////////
 // The Reduce Method
 
@@ -197,6 +200,26 @@ TEST DATA 2: [16, 6, 10, 5, 6, 1, 4]
 
 GOOD LUCK 😀
 */
+
+const arr1 = [5, 2, 4, 1, 15, 8, 3];
+const arr2 = [16, 6, 10, 5, 6, 1, 4];
+
+const calcAverageHumanAge = function (ages) {
+  const AverageHumanAge = ages
+    .map(arr => (arr <= 2 ? 2 * arr : 16 + 4 * arr))
+    .filter(age => age >= 18)
+    .reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
+
+  console.log(AverageHumanAge);
+  // const averageAge =
+  //   adultAge.reduce((acc, cur, i) => acc + cur, 0) / adultAge.length;
+  // console.log(averageAge);
+
+  // 2 3, (2 + 3) / 2 = 2.5 === 2 / 2 + 3 / 2 = 2.5
+};
+
+calcAverageHumanAge(arr1);
+calcAverageHumanAge(arr2);
 
 /////////////////////////////////////////////////
 // Looping Arrays: forEach
