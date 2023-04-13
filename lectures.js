@@ -1,6 +1,20 @@
 'use strict';
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+/*
+///////////////////////////////////////
+// The Find Method
+
+// return FIRST element that satisfies condition
+const firstWithdrawal = movements.find(mov => mov < 0);
+console.log(movements);
+console.log(firstWithdrawal);
+
+console.log(accounts);
+
+const account = accounts.find(acc => acc.owner === 'Jessica Davis');
+console.log(account);
+*/
 
 ///////////////////////////////////////
 // The Magic of Chaining Methods
@@ -200,7 +214,7 @@ TEST DATA 2: [16, 6, 10, 5, 6, 1, 4]
 
 GOOD LUCK 😀
 */
-
+/*
 const arr1 = [5, 2, 4, 1, 15, 8, 3];
 const arr2 = [16, 6, 10, 5, 6, 1, 4];
 
@@ -220,6 +234,7 @@ const calcAverageHumanAge = function (ages) {
 
 calcAverageHumanAge(arr1);
 calcAverageHumanAge(arr2);
+*/
 
 /////////////////////////////////////////////////
 // Looping Arrays: forEach
