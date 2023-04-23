@@ -1,10 +1,62 @@
 'use strict';
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+///////////////////////////////////////
+// Sorting arrays
+/*
+// Strings - mutate original array
+const owners = ['Jonas', 'Zach', 'Adam', 'Martha'];
+console.log(owners.sort());
+
+// Numbers
+console.log(movements);
+
+// return < 0; A, B (keep order)
+// return > 0; B, A (switch order)
+
+// Ascending
+// movements.sort((a, b) => {
+//   if (a > b) return 1;
+//   if (b > a) return -1;
+// });
+movements.sort((a, b) => a - b);
+console.log(movements);
+
+// Descending
+// movements.sort((a, b) => {
+//   if (a > b) return -1;
+//   if (b > a) return 1;
+// });
+movements.sort((a, b) => b - a);
+console.log(movements);
+*/
 
 ///////////////////////////////////////
-// The Find Method
+// Flat and flatMap funcitons
+/*
+const arr = [[1, 2, 3], [4, 5, 6], 7, 8];
+console.log(arr.flat());
 
+const arrDeep = [[[1, 2], 3], [4, [5, 6]], 7, 8];
+console.log(arrDeep.flat(2));
+
+// flat
+const overalBalance = accounts
+  .map(acc => acc.movements)
+  .flat()
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(overalBalance);
+
+// flatMap
+const overalBalance2 = accounts
+  .flatMap(acc => acc.movements)
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(overalBalance2);
+*/
+
+///////////////////////////////////////
+// Some and every functions
+/*
 console.log(movements);
 
 // EQUALITY
@@ -28,11 +80,11 @@ console.log('Separate callback');
 console.log(movements.some(deposit));
 console.log(movements.every(deposit));
 console.log(movements.filter(deposit));
+*/
 
-/*
 ///////////////////////////////////////
 // The Find Method
-
+/*
 // return FIRST element that satisfies condition
 const firstWithdrawal = movements.find(mov => mov < 0);
 console.log(movements);
